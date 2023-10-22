@@ -18,6 +18,11 @@ parameters:
   dtype: string
   options: ["Uncoded","Convolutional","Reed Solomon","Concatenated","Turbo","LDPC on a Transfer Frame","LDPC on a Stream of SMTFS"]
   default: "Uncoded"
+
+- id: transfer_frame_version
+  label: Transfer Frame version number
+  dtype: int
+  default: 0
     
 - id: size
   label: Size
@@ -25,7 +30,7 @@ parameters:
   default: 0
 
     
-- id: space_craft_id
+- id: spacecraft_id
   label: Space Craft ID 
   dtype: int 
   default: 0
@@ -37,8 +42,9 @@ parameters:
   
 - id: ocf_flag 
   label: OCF Flag
-  dtype: int 
-  default: 0
+  dtype: string 
+  options: ["Yes", "No"]
+  default: "Yes"
   
 - id: master_channel_frame_count 
   label: Master Channel Frame Count 
@@ -69,8 +75,8 @@ parameters:
   default: "Yes"
   
   
-- id: segment_length_id 
-  label: Packet Order Flag 
+- id: frame_length 
+  label: Frame length 
   dtype: int 
   default: 0 
   
@@ -79,60 +85,7 @@ parameters:
   label: First Header Pointer 
   dtype: string 
   default: "None" 
-  
-  
-    
-  
-    
-  
-  
-    
-  
-    
-  
-    
-  
-  
-    
-    
-  
-    
-  
-  
-    
-  
-    
-  
-    
-  
-  
-    
-    
-  
-    
-  
-  
-    
-  
-    
-  
-    
-  
-  
-    
-    
-  
-    
-  
-  
-    
-  
-    
-  
-    
-  
-  
-    
+
 #- id: ...
 #  label: ...
 #  dtype: ...
@@ -150,6 +103,8 @@ inputs:
   dtype: complex 
   vlen: 1 
   optional: false
+
+
 
 outputs:
 - label: out0 
