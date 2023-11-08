@@ -7,5 +7,6 @@
 #
 
 install(FILES
-    telemetry_primaryheader_adder_1_telemetry_primaryheader_adder_1.block.yml DESTINATION share/gnuradio/grc/blocks
+    telemetry_primaryheader_adder_1_telemetry_primaryheader_adder_1.block.yml
+    telemetry_primaryheader_adder_1_tph.block.yml DESTINATION share/gnuradio/grc/blocks
 )

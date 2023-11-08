@@ -22,7 +22,8 @@ add_subdirectory(bindings)
 GR_PYTHON_INSTALL(
     FILES
     __init__.py
-    telemetry_primaryheader_adder_1.py DESTINATION ${GR_PYTHON_DIR}/gnuradio/telemetry_primaryheader_adder_1
+    telemetry_primaryheader_adder_1.py
+    tph.py DESTINATION ${GR_PYTHON_DIR}/gnuradio/telemetry_primaryheader_adder_1
 )
 
 ########################################################################

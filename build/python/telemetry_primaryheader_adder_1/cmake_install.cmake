@@ -46,6 +46,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.11/dist-packages/gnuradio/telemetry_primaryheader_adder_1" TYPE FILE FILES
     "/home/antonrejoe/gr-telemetry_primaryheader_adder_1/python/telemetry_primaryheader_adder_1/__init__.py"
     "/home/antonrejoe/gr-telemetry_primaryheader_adder_1/python/telemetry_primaryheader_adder_1/telemetry_primaryheader_adder_1.py"
+    "/home/antonrejoe/gr-telemetry_primaryheader_adder_1/python/telemetry_primaryheader_adder_1/tph.py"
     )
 endif()
 
@@ -53,8 +54,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.11/dist-packages/gnuradio/telemetry_primaryheader_adder_1" TYPE FILE FILES
     "/home/antonrejoe/gr-telemetry_primaryheader_adder_1/build/python/telemetry_primaryheader_adder_1/__init__.pyc"
     "/home/antonrejoe/gr-telemetry_primaryheader_adder_1/build/python/telemetry_primaryheader_adder_1/telemetry_primaryheader_adder_1.pyc"
+    "/home/antonrejoe/gr-telemetry_primaryheader_adder_1/build/python/telemetry_primaryheader_adder_1/tph.pyc"
     "/home/antonrejoe/gr-telemetry_primaryheader_adder_1/build/python/telemetry_primaryheader_adder_1/__init__.pyo"
     "/home/antonrejoe/gr-telemetry_primaryheader_adder_1/build/python/telemetry_primaryheader_adder_1/telemetry_primaryheader_adder_1.pyo"
+    "/home/antonrejoe/gr-telemetry_primaryheader_adder_1/build/python/telemetry_primaryheader_adder_1/tph.pyo"
     )
 endif()
 

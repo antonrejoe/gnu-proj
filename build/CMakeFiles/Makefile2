@@ -109,16 +109,31 @@ apps/clean: apps/CMakeFiles/pygen_apps_9a6dd283c3de653fbca500f9721f634f.dir/clea
 # Directory level rules for directory docs
 
 # Recursive "all" directory target.
-docs/all:
+docs/all: docs/doxygen/all
 .PHONY : docs/all
 
 # Recursive "preinstall" directory target.
-docs/preinstall:
+docs/preinstall: docs/doxygen/preinstall
 .PHONY : docs/preinstall
 
 # Recursive "clean" directory target.
-docs/clean:
+docs/clean: docs/doxygen/clean
 .PHONY : docs/clean
+
+#=============================================================================
+# Directory level rules for directory docs/doxygen
+
+# Recursive "all" directory target.
+docs/doxygen/all: docs/doxygen/CMakeFiles/doxygen_target.dir/all
+.PHONY : docs/doxygen/all
+
+# Recursive "preinstall" directory target.
+docs/doxygen/preinstall:
+.PHONY : docs/doxygen/preinstall
+
+# Recursive "clean" directory target.
+docs/doxygen/clean: docs/doxygen/CMakeFiles/doxygen_target.dir/clean
+.PHONY : docs/doxygen/clean
 
 #=============================================================================
 # Directory level rules for directory grc
@@ -169,7 +184,7 @@ lib/clean:
 # Directory level rules for directory python/telemetry_primaryheader_adder_1
 
 # Recursive "all" directory target.
-python/telemetry_primaryheader_adder_1/all: python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e.dir/all
+python/telemetry_primaryheader_adder_1/all: python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493.dir/all
 python/telemetry_primaryheader_adder_1/all: python/telemetry_primaryheader_adder_1/CMakeFiles/copy_module_for_tests.dir/all
 python/telemetry_primaryheader_adder_1/all: python/telemetry_primaryheader_adder_1/bindings/all
 .PHONY : python/telemetry_primaryheader_adder_1/all
@@ -179,7 +194,7 @@ python/telemetry_primaryheader_adder_1/preinstall: python/telemetry_primaryheade
 .PHONY : python/telemetry_primaryheader_adder_1/preinstall
 
 # Recursive "clean" directory target.
-python/telemetry_primaryheader_adder_1/clean: python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e.dir/clean
+python/telemetry_primaryheader_adder_1/clean: python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493.dir/clean
 python/telemetry_primaryheader_adder_1/clean: python/telemetry_primaryheader_adder_1/CMakeFiles/copy_module_for_tests.dir/clean
 python/telemetry_primaryheader_adder_1/clean: python/telemetry_primaryheader_adder_1/bindings/clean
 .PHONY : python/telemetry_primaryheader_adder_1/clean
@@ -252,30 +267,56 @@ apps/CMakeFiles/pygen_apps_9a6dd283c3de653fbca500f9721f634f.dir/clean:
 .PHONY : apps/CMakeFiles/pygen_apps_9a6dd283c3de653fbca500f9721f634f.dir/clean
 
 #=============================================================================
-# Target rules for target python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e.dir
+# Target rules for target docs/doxygen/CMakeFiles/doxygen_target.dir
 
 # All Build rule for target.
-python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e.dir/all:
-	$(MAKE) $(MAKESILENT) -f python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e.dir/build.make python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e.dir/depend
-	$(MAKE) $(MAKESILENT) -f python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e.dir/build.make python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/antonrejoe/gr-telemetry_primaryheader_adder_1/build/CMakeFiles --progress-num=1,2 "Built target pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e"
-.PHONY : python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e.dir/all
+docs/doxygen/CMakeFiles/doxygen_target.dir/all:
+	$(MAKE) $(MAKESILENT) -f docs/doxygen/CMakeFiles/doxygen_target.dir/build.make docs/doxygen/CMakeFiles/doxygen_target.dir/depend
+	$(MAKE) $(MAKESILENT) -f docs/doxygen/CMakeFiles/doxygen_target.dir/build.make docs/doxygen/CMakeFiles/doxygen_target.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/antonrejoe/gr-telemetry_primaryheader_adder_1/build/CMakeFiles --progress-num=1 "Built target doxygen_target"
+.PHONY : docs/doxygen/CMakeFiles/doxygen_target.dir/all
 
 # Build rule for subdir invocation for target.
-python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonrejoe/gr-telemetry_primaryheader_adder_1/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e.dir/all
+docs/doxygen/CMakeFiles/doxygen_target.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonrejoe/gr-telemetry_primaryheader_adder_1/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/doxygen/CMakeFiles/doxygen_target.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonrejoe/gr-telemetry_primaryheader_adder_1/build/CMakeFiles 0
-.PHONY : python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e.dir/rule
+.PHONY : docs/doxygen/CMakeFiles/doxygen_target.dir/rule
 
 # Convenience name for target.
-pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e: python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e.dir/rule
-.PHONY : pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e
+doxygen_target: docs/doxygen/CMakeFiles/doxygen_target.dir/rule
+.PHONY : doxygen_target
 
 # clean rule for target.
-python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e.dir/clean:
-	$(MAKE) $(MAKESILENT) -f python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e.dir/build.make python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e.dir/clean
-.PHONY : python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e.dir/clean
+docs/doxygen/CMakeFiles/doxygen_target.dir/clean:
+	$(MAKE) $(MAKESILENT) -f docs/doxygen/CMakeFiles/doxygen_target.dir/build.make docs/doxygen/CMakeFiles/doxygen_target.dir/clean
+.PHONY : docs/doxygen/CMakeFiles/doxygen_target.dir/clean
+
+#=============================================================================
+# Target rules for target python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493.dir
+
+# All Build rule for target.
+python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493.dir/all:
+	$(MAKE) $(MAKESILENT) -f python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493.dir/build.make python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493.dir/depend
+	$(MAKE) $(MAKESILENT) -f python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493.dir/build.make python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/antonrejoe/gr-telemetry_primaryheader_adder_1/build/CMakeFiles --progress-num=2,3 "Built target pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493"
+.PHONY : python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493.dir/all
+
+# Build rule for subdir invocation for target.
+python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonrejoe/gr-telemetry_primaryheader_adder_1/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonrejoe/gr-telemetry_primaryheader_adder_1/build/CMakeFiles 0
+.PHONY : python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493.dir/rule
+
+# Convenience name for target.
+pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493: python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493.dir/rule
+.PHONY : pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493
+
+# clean rule for target.
+python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493.dir/clean:
+	$(MAKE) $(MAKESILENT) -f python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493.dir/build.make python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493.dir/clean
+.PHONY : python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493.dir/clean
 
 #=============================================================================
 # Target rules for target python/telemetry_primaryheader_adder_1/CMakeFiles/copy_module_for_tests.dir

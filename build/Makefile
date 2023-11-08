@@ -198,17 +198,30 @@ pygen_apps_9a6dd283c3de653fbca500f9721f634f/fast:
 .PHONY : pygen_apps_9a6dd283c3de653fbca500f9721f634f/fast
 
 #=============================================================================
-# Target rules for targets named pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e
+# Target rules for targets named doxygen_target
 
 # Build rule for target.
-pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e
-.PHONY : pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e
+doxygen_target: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doxygen_target
+.PHONY : doxygen_target
 
 # fast build rule for target.
-pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e/fast:
-	$(MAKE) $(MAKESILENT) -f python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e.dir/build.make python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e.dir/build
-.PHONY : pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e/fast
+doxygen_target/fast:
+	$(MAKE) $(MAKESILENT) -f docs/doxygen/CMakeFiles/doxygen_target.dir/build.make docs/doxygen/CMakeFiles/doxygen_target.dir/build
+.PHONY : doxygen_target/fast
+
+#=============================================================================
+# Target rules for targets named pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493
+
+# Build rule for target.
+pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493
+.PHONY : pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493
+
+# fast build rule for target.
+pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493/fast:
+	$(MAKE) $(MAKESILENT) -f python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493.dir/build.make python/telemetry_primaryheader_adder_1/CMakeFiles/pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493.dir/build
+.PHONY : pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493/fast
 
 #=============================================================================
 # Target rules for targets named copy_module_for_tests
@@ -237,8 +250,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... copy_module_for_tests"
+	@echo "... doxygen_target"
 	@echo "... pygen_apps_9a6dd283c3de653fbca500f9721f634f"
-	@echo "... pygen_python_telemetry_primaryheader_adder_1_e23808763406bac29867e456d45e558e"
+	@echo "... pygen_python_telemetry_primaryheader_adder_1_4c871ded3ce16033ce2edbaad8a11493"
 	@echo "... uninstall"
 .PHONY : help
 

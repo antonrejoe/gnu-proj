@@ -43,6 +43,9 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES "/home/antonrejoe/gr-telemetry_primaryheader_adder_1/grc/telemetry_primaryheader_adder_1_telemetry_primaryheader_adder_1.block.yml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gnuradio/grc/blocks" TYPE FILE FILES
+    "/home/antonrejoe/gr-telemetry_primaryheader_adder_1/grc/telemetry_primaryheader_adder_1_telemetry_primaryheader_adder_1.block.yml"
+    "/home/antonrejoe/gr-telemetry_primaryheader_adder_1/grc/telemetry_primaryheader_adder_1_tph.block.yml"
+    )
 endif()
 

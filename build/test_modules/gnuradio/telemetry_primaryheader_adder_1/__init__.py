@@ -16,9 +16,10 @@ import os
 try:
     # this might fail if the module is python-only
     from .telemetry_primaryheader_adder_1_python import *
+    from .tele import * 
 except ModuleNotFoundError:
     pass
 
 # import any pure python here
-from .telemetry_primaryheader_adder_1 import telemetry_primaryheader_adder_1
+from .tph import tph
 #
